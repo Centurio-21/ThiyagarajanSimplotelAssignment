@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel Assignment (Thiyagarajan)</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper1">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li class="drop"><a href="">Order</a></li>
+          <li class="drop"><a href="">Food</a></li>
+          <li class="drop"><a href="">Restaurant</a></li>
+          <li class="drop"><a href="">Testimonials</a></li>
+          <li class="drop"><a href="">Contact Us</a></li>
+          <li>
+            <img
+              src="menu-bar.png"
+              class="menu"
+              alt="menu-icon"
+              title="This will enable when the window is resized"
+            />
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container1">
+        <div class="textcontainer">
+          <h1>LOREM IPSUM</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+            est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+            euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+            quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem
+            nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac
+            porta viverra.
+          </p>
+
+          <button>Click Me</button>
+        </div>
+
+        <img src="pexels-robin-stickel-70497.jpg" alt="" class="burgerimage" />
+      </div>
+    </div>
+
+    <div class="wrapper2">
+      <div class="gridimages">
+        <div class="imagecontainer1">
+          <div class="cont1">
+            <img src="pexels-rachel-claire-6752433.jpg" alt="" class="image1" />
+          </div>
+          <div class="cont2">
+            <img src="pexels-eva-bronzini-6141651.jpg" alt="" class="image2" />
+          </div>
+        </div>
+
+        <div class="imagecontainer2">
+          <div class="cont3">
+            <img src="pexels-mister-mister-3434523.jpg" alt="" class="image3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tcontainer2">
+        <p class="c2p1">LOREM IPSUM</p>
+        <div class="headings">
+          <h1>LOREM IPSUM</h1>
+          <h1>SET ADEMIR</h1>
+        </div>
+        <div class="click">
+          <p>Click</p>
+          <img src="icons8-arrow-30.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const menulist = document.querySelectorAll(".drop");
+      const list = document.getElementsByTagName("ul");
+
+      console.log(menulist);
+      menu.addEventListener("click", () => {
+        menulist.forEach((element) => {
+          element.classList.toggle("showmenu");
+        });
+      });
+    </script>
+  </body>
+</html>

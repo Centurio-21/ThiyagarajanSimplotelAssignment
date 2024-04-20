@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, rgb(253, 253, 159), lightcoral);
+  overflow: hidden;
+}
+
+nav {
+  position: relative;
+  display: inline;
+  background: #ff7171;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  letter-spacing: 0.3rem;
+  margin: 0px 150px;
+}
+
+ul > li {
+  margin: 5px 30px 5px 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #ff7171;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+ul > li .menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 172, 1) 0%,
+    rgba(254, 214, 204, 1) 30%,
+    rgba(254, 170, 246, 1) 100%
+  );
+}
+
+.textcontainer {
+  width: 50%;
+  margin-left: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.textcontainer h1 {
+  letter-spacing: 0.5rem;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.textcontainer p {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.textcontainer button {
+  width: 250px;
+  height: 50px;
+  font-size: 17px;
+  margin-top: 50px;
+  background: #ff7171;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.wrapper1 .burgerimage {
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+  clip-path: inset(0 0 0 100px);
+}
+
+.wrapper2 {
+  background: linear-gradient(to right, rgb(253, 253, 159), lightcoral);
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    130deg,
+    rgba(255, 247, 172, 1) 0%,
+    rgba(254, 214, 204, 1) 30%,
+    rgba(254, 170, 246, 1) 100%
+  );
+}
+
+.gridimages {
+  display: flex;
+}
+
+.imagecontainer1 {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 20px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px;
+  grid-gap: 15px;
+}
+
+.cont1 {
+  background-color: orange;
+  grid-row: 1/4;
+  grid-column: 1/5;
+}
+
+.cont2 {
+  background-color: red;
+  grid-row: 4/7;
+  grid-column: 1/5;
+}
+
+.image1,
+.image2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagecontainer2 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 30px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+}
+
+.cont3 {
+  grid-row: 1/8;
+  grid-column: 1/6;
+}
+
+.tcontainer2 {
+  background-color: #ff7171;
+  padding: 30px 30px 30px 50px;
+  margin-left: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tcontainer2 .c2p1 {
+  letter-spacing: 0.3rem;
+}
+
+.headings {
+  letter-spacing: 0.5rem;
+  font-size: 30px;
+  margin: 25px 0px;
+}
+
+.click {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.click img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .drop {
+    display: none;
+  }
+
+  ul > li .menu {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textcontainer {
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-right: 100px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+
+  .textcontainer {
+    width: 100%;
+    margin-left: 100px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .wrapper1 .burgerimage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  .wrapper2 {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  }
+
+  .imagecontainer1 {
+    grid-template-columns: 50px 50px 50px 50px 20px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  }
+
+  .imagecontainer2 {
+    grid-template-columns: 50px 50px 50px 50px 30px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  }
+
+  .gridimages {
+    margin-top: 70px;
+  }
+
+  .tcontainer2 {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .drop {
+    display: none;
+  }
+
+  ul > li .menu {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .textcontainer {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .wrapper1 .burgerimage {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  .tcontainer2 {
+    margin-left: 0px;
+  }
+  .headings {
+    letter-spacing: 0.5rem;
+    font-size: 25px;
+    margin: 25px 0px;
+  }
+  .gridimages {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .drop {
+    display: none;
+  }
+
+  ul > li .menu {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .textcontainer {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .textcontainer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .wrapper1 .burgerimage {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  .imagecontainer1 {
+    grid-template-columns: 40px 40px 40px 40px 20px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+  }
+
+  .imagecontainer2 {
+    grid-template-columns: 40px 40px 40px 40px 30px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+  }
+
+  .gridimages {
+    margin-top: 50px;
+  }
+}
